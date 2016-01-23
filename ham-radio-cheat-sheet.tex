@@ -1,6 +1,8 @@
 \documentclass[a4paper,11pt]{article}
+\pagestyle{headings}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
 \author{Phitherek\_ SO9PH}
 \title{HAM Radio Cheat Sheet}
 \begin{document}
@@ -8,5 +10,48 @@
 \section{Krótki wstęp}
 W tym dokumencie przedstawiam w skrócie wszelkie informacje potrzebne do przeprowadzenia zgodnie z zasadami łączności radiowej na pasmach amatorskich. Aby samodzielnie przeprowadzić łączność na tych pasmach należy posiadać pozwolenie radiowe. Istnieją kluby krótkofalarskie, w których można taką łączność przeprowadzić pod nadzorem operatora odpowiedzialnego.
 \section{Pasma i bandplan}
-W zakresie fal krótkich (KF, ang. HF (High Frequency)) oraz ultrakrótkich (UKF, ang. VHF (Very High Frequency, 2m) i UHF (Ultra High Frequency, 70 cm)) istnieją poszczególne pasma, które mają różne właściwości. W każdym paśmie istnieją wydzielone częstotliwości tworzące pasma amatorskie - tylko na tych pasmach można prowadzić łączność amatorską. W ramach tych częstotliwości ustalane są podzakresy i ich przeznaczenie - nazywamy to bandplanem. Bandplan nie jest formalnie wiążący - jest tylko zaleceniem - natomiast w praktyce wszyscy go przestrzegają. Ważniejsze części bandplanu w popularniejszych pasmach przedstawiam w poniższej tabeli.
+W zakresie fal krótkich (KF, ang. HF (High Frequency)) oraz ultrakrótkich (UKF, ang. VHF (Very High Frequency, 2m) i UHF (Ultra High Frequency, 70 cm)) istnieją poszczególne pasma, które mają różne właściwości. W każdym paśmie istnieją wydzielone częstotliwości tworzące pasma amatorskie - tylko na tych pasmach można prowadzić łączność amatorską. W ramach tych częstotliwości ustalane są podzakresy i ich przeznaczenie - nazywamy to bandplanem. Bandplan nie jest formalnie wiążący - jest tylko zaleceniem - natomiast w praktyce wszyscy go przestrzegają. Ważniejsze części bandplanu przedstawiam w poniższej tabeli.
+\begin{center}
+\begin{tabular}{| c | c | p{8cm} |}
+\hline
+\textbf{Pasmo} & \textbf{Zakres częstotliwości} & \textbf{Przeznaczenie} \\ \hline
+80 m & 3500-3580 kHz & CW i dane (szerokość pasma < 200 Hz) \\ \cline{2-3}
+ & 3580-3600 kHz & CW, RTTY i dane (szerokość pasma < 500 Hz) \\ \cline{2-3}
+ & 3600-3620 kHz & CW, RTTY, dane, transmisje testowe, głos i obraz \\ \cline{2-3}
+ & 3620-3800 kHz & CW, głos i obraz (szerokość pasma < 3 kHz) \\ \hline
+40 m & 7000-7040 kHz & CW i dane (szerokość pasma < 200 Hz) \\ \cline{2-3}
+ & 7040-7050 kHz & CW, RTTY i dane (szerokość pasma < 500 Hz) \\ \cline{2-3}
+ & 7050-7060 kHz & CW, RTTY, dane, transmisje testowe, głos i obraz \\ \cline{2-3}
+ & 7060-7100 kHz & CW, głos i obraz (szerokość pasma < 3 kHz) \\ \cline{2-3}
+ & 7100-7200 kHz & CW, głos i obraz (szerokość pasma < 3 kHz, od marca 2009) \\ \cline{2-3}
+ & 7200-7300 kHz & CW, głos i obraz (szerokość pasma < 3 kHz, jako drugorzędne) \\ \hline
+30 m & 10100-10140 kHz & CW i dane (szerokość pasma < 200 Hz) \\ \cline{2-3}
+ & 10140-10150 kHz & CW, RTTY i dane (szerokość pasma < 500 Hz) \\ \hline
+20 m & 14000-14070 kHz & CW i dane (szerokość pasma < 200 Hz) \\ \cline{2-3}
+ & 14070-14099 kHz & CW, RTTY i dane (szerokość pasma < 500 Hz) \\ \cline{2-3}
+ & 14100 kHz & Zarezerwowane dla beaconów \\ \cline{2-3}
+ & 14101-14350 kHz & CW, głos i obraz (szerokość pasma < 3 kHz) \\ \hline
+17 m & 18068-18095 kHz & CW i dane (szerokość pasma < 200 Hz) \\ \cline{2-3}
+ & 18095-18109 kHz & CW, RTTY i dane (szerokość pasma < 500 Hz) \\ \cline{2-3}
+ & 18110 kHz & Zarezerwowane dla beaconów \\ \cline{2-3}
+ & 18111-18168 kHz & CW, głos i obraz (szerokość pasma < 3 kHz) \\ \hline
+15 m & 21000-21070 kHz & CW i dane (szerokość pasma < 200 Hz) \\ \cline{2-3}
+ & 21070-21110 kHz & CW, RTTY i dane (szerokość pasma < 500 Hz) \\ \cline{2-3}
+ & 21110-21120 kHz & CW, RTTY, dane, BEZ SSB (szerokość pasma < 2.7 kHz) \\ \cline{2-3}
+ & 21120-21149 kHz & CW, RTTY i dane (szerokość pasma < 500 Hz) \\ \cline{2-3}
+ & 21150 kHz & Zarezerwowane dla beaconów \\ \cline{2-3}
+ & 21151-21450 kHz & CW, RTTY, dane, transmisje testowe, głos i obraz \\ \hline
+12 m & 24890-24915 kHz & CW i dane (szerokość pasma < 200 Hz) \\ \cline{2-3}
+ & 24915-24929 kHz & CW, RTTY i dane (szerokość pasma < 500 Hz) \\ \cline{2-3}
+ & 24930 kHz & Zarezerwowane dla beaconów \\ \cline{2-3}
+ & 24931-24990 kHz & CW, głos i obraz (szerokość pasma < 3 kHz) \\ \hline
+10 m & 28000-28070 kHz & CW i dane (szerokość pasma < 200 Hz) \\ \cline{2-3}
+ & 28070-28190 kHz & CW, RTTY i dane (szerokość pasma < 500 Hz) \\ \cline{2-3}
+ & 28191-28224 kHz & Zarezerwowane dla beaconów \\ \cline{2-3}
+ & 28225-29200 kHz & CW, głos i obraz (szerokość pasma < 3 kHz) \\ \cline{2-3}
+ & 29200-29300 kHz & CW, dane, pakiety, transmisja FM, głos i obraz (szerokość pasma < 20 kHz) \\ \cline{2-3}
+ & 29300-29510 kHz & Zarezerwowane na link satelitarny \\ \cline{2-3}
+ & 29510-29700 kHz & CW, głos i obraz (szerokość pasma < 3 kHz) \\ \hline
+\end{tabular}
+\end{center}
 \end{document}

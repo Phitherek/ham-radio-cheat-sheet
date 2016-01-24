@@ -3,6 +3,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[polish]{babel}
+\usepackage{graphicx}
+\renewcommand{\familydefault}{\rmdefault}
+\renewcommand*\rmdefault{ptm}
+\renewcommand*\sfdefault{phv}
+\renewcommand*\ttdefault{pcr}
 \author{Phitherek\_ SO9PH}
 \title{HAM Radio Cheat Sheet}
 \begin{document}
@@ -103,6 +108,58 @@ W tej części opisuję w jaki sposób identyfikować się w łączności amator
 Krótkofalarski znak wywoławczy złożony jest z dwóch znaków alfanumerycznych (liter lub cyfr) zwanych prefiksem, następnie numerem, a następnie kolejnymi znakami alfanumerycznymi zwanymi sufiksem, których ilość jest zależna od przepisów danego kraju. W Polsce długość sufiksu ma od 1 do 4 znaków (stacje okolicznościowe do 7 znaków). Przykłady znaków to SQ9O, SO9PH, SQ9WTF lub SP9HACK. Znak krótkofalarski służy do jednoznacznej identyfikacji nadającej stacji.
 \subsection{Literowanie}
 Aby nasz znak oraz inne przekazywane informacje były zrozumiałe dla odbiorcy, zwłaszcza przy dużych zakłóceniach, stosuje się literowanie. Istnieją literowania specyficzne dla języków oraz literowanie międzynarodowe ITU. W poniższej tabeli przedstawiam najczęściej stosowane literowania - polskie, międzynarodowe i angielskie.
+\begin{center}
+\begin{tabular}{| c | p{4cm} | p{4cm} | p{4cm} |}
+\hline
+\textbf{Litera} & \textbf{Literowanie polskie} & \textbf{Literowanie ITU (NATO)} & \textbf{Literowanie angielskie} \\ \hline
+A & Adam & Alpha (czyt. alfa) & Able (czyt. ejbl) \\ \hline
+B & Barbara & Bravo (czyt. brawo) & Baker (czyt. bejker) \\ \hline
+C & Celina/Cezary & Charlie (czyt. czarli) & Charlie (czyt. czarli) \\ \hline
+D & Dorota & Delta (czyt. delta) & Dog (czyt. dog) \\ \hline
+E & Ewa & Echo (czyt. ekou) & Easy (czyt. izi) \\ \hline
+F & Franciszek/Franek & Foxtrot (czyt. fokstrot) & Fox (czyt. foks) \\ \hline
+G & Genowefa/Grażyna & Golf (czyt. golf) & George (czyt. dżordż) \\ \hline
+H & Henryk/Halina & Hotel (czyt. hotel) & How (czyt. hau) \\ \hline
+I & Irena & India (czyt. india) & Item (czyt. ajtem) \\ \hline
+J & Jadwiga/Józef & Juliett (czyt. dżuliet) & Jig (czyt. dżig) \\ \hline
+K & Karol & Kilo (czyt. kilo) & King (czyt. king) \\ \hline
+L & Ludwik & Lima (czyt. lima) & Love (czyt. low) \\ \hline
+M & Maria & Mike (czyt. majk) & Mike (czyt. majk)/Mary (czyt. mery) \\ \hline
+N & Natalia & November (czyt. nowember) & Nan (czyt. nan) \\ \hline
+O & Olga & Oscar (czyt. oskar) & Oboe (czyt. oboi) \\ \hline
+P & Paweł & Papa (czyt. papa) & Peter (czyt. piter) \\ \hline
+Q & Quebec (czyt. kłebek/kebek)/Quantum (czyt. kłantum, rzadziej) & Quebek (czyt. kłebek/kebek) & Queen (czyt. kłin) \\ \hline
+R & Roman & Romeo (czyt. romio) & Roger (czyt. rodżer) \\ \hline
+S & Stefan & Sierra (czyt. siera) & Sugar (czyt. szuger) \\ \hline
+T & Tadeusz & Tango (czyt. tango) & Tare (czyt. tejr) \\ \hline
+U & Urszula & Uniform (czyt. juniform) & Uncle (czyt. ankl) \\ \hline
+V & Violetta (czyt. wjoletta) & Victor (czyt. wiktor) & Victor (czyt. wiktor) \\ \hline
+W & Wanda & Whiskey (czyt. łiski) & William (czyt. łiliam) \\ \hline
+X & Xawery (czyt. ksawery)/Ksantypa (rzadziej) & X-ray (czyt. eks-rej) & X-ray (czyt. eks-rej) \\ \hline
+Y & Yokohama (czyt. jokohama)/Ypsylon & Yankee (czyt. janki) & Yoke (czyt. jołk) \\ \hline
+Z & Zygmunt & Zulu (czyt. zulu) & Zebra (czyt. zibra) \\ \hline
+\end{tabular}
+\end{center}
+\begin{center}
+\begin{tabular}{| c | p{4cm} | p{4cm} |}
+\hline
+\textbf{Cyfra/Znak} & \textbf{Literowanie polskie} & \textbf{Literowanie ITU (NATO)} \\ \hline
+0 & Zero & Zero (czyt. ziro)/Nadazero (czyt. nadazejro) \\ \hline
+1 & Jedynka & One (czyt. łan/łun)/Unaone (czyt. unałan/unałun) \\ \hline
+2 & Dwa & Two (czyt. tu)/Bissotwo (czyt. bissotu) \\ \hline
+3 & Trzy & Three (czyt. tri)/Terrathree (czyt. tejratri) \\ \hline
+4 & Cztery & Four (czyt. fołer)/Kartefour (czyt. kartejfołer) \\ \hline
+5 & Piątka & Five (czyt. fajf(i))/Pantafive (czyt. pantafajf) \\ \hline
+6 & Sześć & Six (czyt. siks)/Soxisix (czyt. soksisiks) \\ \hline
+7 & Siedem & Seven (czyt. sewen)/Setteseven (czyt. sejtejsewen) \\ \hline
+8 & Osiem & Eight (czyt. ejt)/Oktoeight (czyt. oktoejt) \\ \hline
+9 & Dziewięć & Nine (czyt. najn)/Niner (czyt. najner)/Novenine (czyt. nowejnajner) \\ \hline
+100 & Sto & Hundred (czyt. handred) \\ \hline
+1000 & Tysiąc & Thousand (czyt. tołzand) \\ \hline
+Punkt dziesiętny & Punkt dziesiętny & Point/Decimal (czyt. dejsimal) \\ \hline
+. & Kropka & Stop (czyt. stop) \\ \hline
+\end{tabular}
+\end{center}
 \subsection{Łamanie}
 Łamanie znaku pozwala w prosty sposób przekazać już przy wywołaniu pewne informacje, które mogą być istotne dla pomyślnego przeprowadzenia łączności lub oceny jej atrakcyjności (np. czy łączność jest daleka, czy bliska). Poniżej przedstawiłem najczęściej używane sposoby łamania znaku:
 \begin{itemize}
@@ -110,5 +167,14 @@ Aby nasz znak oraz inne przekazywane informacje były zrozumiałe dla odbiorcy, 
 \item ZN4K/qrp - oznacza stację małej mocy.
 \item ZN4K/m - zwykle literowane "przez mobil", po angielsku "stroke mobile" - stacja poruszająca się, najczęściej samochodowa, ale może być też stosowane np. na jachcie żaglowym na wodach terytorialnych.
 \item ZN4K/mm - zwykle literowane po angielsku "Mary Mary" lub "Mickey Mouse" - oznacza stację nadającą ze statku znajdującego się na wodach międzynarodowych.
+\item ZN4K/am - nie spotkałem się ze specjalnym literowaniem - oznacza stację pracującą z powietrza.
+\item ZN4K/d - po angielsku "stroke disaster" - oznacza stację pracującą z miejsca katastrofy lub klęski żywiołowej.
+\item PX/ZN4K - jeżeli jesteśmy na terenie innego kraju i jest on w zrzeszeniu CEPT (w przypadku pozwoleń wydanych w krajach tego zrzeszenia, w tym w Polsce), to przez okres 3 miesięcy możemy korzystać ze swojego znaku łamiąc go na początku przez prefiks danego kraju np. OK/ZN4K jeżeli pracujemy z terenu Czech. To jedyne łamanie, które jest obowiązkowe.
+\item ZN4K/numer - używane, jeżeli stacja nie łamie się przez nic, a pracuje spoza swojej lokalizacji widniejącej na pozwoleniu radiowym, w szczególności z innego okręgu wywoławczego.
 \end{itemize}
+Opisane powyżej łamania znaków można ze sobą łączyć, aby przekazać dodatkowe informacje. Oczywiście można się też łamać przez inne rzeczy zależnie od sytuacji, ale występują one rzadko. Poniżej przedstawiam mapę polskich okręgów wywoławczych jako załącznik do ostatniego przykładu.
+\begin{figure}[p]
+\includegraphics{Polish_HAM_Radio_Regions}
+\caption{Polskie okręgi wywoławcze}
+\end{figure}
 \end{document}

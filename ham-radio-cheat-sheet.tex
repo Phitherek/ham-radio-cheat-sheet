@@ -13,10 +13,11 @@
 \title{HAM Radio Cheat Sheet}
 \begin{document}
 \maketitle
+\tableofcontents
 \section{Krótki wstęp}
 W tym dokumencie przedstawiam w skrócie wszelkie informacje potrzebne do przeprowadzenia zgodnie z zasadami łączności radiowej na pasmach amatorskich. Aby samodzielnie przeprowadzić łączność na tych pasmach należy posiadać pozwolenie radiowe. Istnieją kluby krótkofalarskie, w których można taką łączność przeprowadzić pod nadzorem operatora odpowiedzialnego.
 \section{Pasma i bandplan}
-W zakresie fal krótkich (KF, ang. HF (High Frequency)) oraz ultrakrótkich (UKF, ang. VHF (Very High Frequency, 2m) i UHF (Ultra High Frequency, 70 cm)) istnieją poszczególne pasma, które mają różne właściwości. W każdym paśmie istnieją wydzielone częstotliwości tworzące pasma amatorskie - tylko na tych pasmach można prowadzić łączność amatorską. W ramach tych częstotliwości ustalane są podzakresy i ich przeznaczenie - nazywamy to bandplanem. Bandplan nie jest formalnie wiążący - jest tylko zaleceniem - natomiast w praktyce wszyscy go przestrzegają. Ważniejsze części bandplanu przedstawiam w poniższej tabeli.
+W zakresie fal krótkich (KF, ang. HF (High Frequency)) oraz ultrakrótkich (UKF, ang. VHF (Very High Frequency, 2m) i UHF (Ultra High Frequency, 70 cm)) istnieją poszczególne pasma, które mają różne właściwości. W każdym paśmie istnieją wydzielone częstotliwości tworzące pasma amatorskie - tylko na tych pasmach można prowadzić amatorską łączność krótkofalarską\footnote{Pasma amatorskie występują także poza wymienionym tu zakresem fal, ale nie są aż tak popularne. Łączności amatorskie bez pozwolenia można prowadzić także w pasmach CB i PMR.}. W ramach tych częstotliwości ustalane są podzakresy i ich przeznaczenie - nazywamy to bandplanem. Bandplan nie jest formalnie wiążący - jest tylko zaleceniem - natomiast w praktyce wszyscy go przestrzegają. Ważniejsze części bandplanu przedstawiam w poniższej tabeli.
 \begin{center}
 \begin{tabular}{| c | c | p{8cm} |}
 \hline
@@ -76,10 +77,10 @@ W zakresie fal krótkich (KF, ang. HF (High Frequency)) oraz ultrakrótkich (UKF
  & 432.400-440.000 MHz & CW, dane, RTTY, dane pakietowe, głos, obraz i TV \\ \hline
 \end{tabular}
 \end{center}
-\subsection{Krótko o typach transmisji}
+\subsection{Krótko o typach emisji}
 \begin{itemize}
-\item Transmisja CW - to po prostu telegrafia, czyli porozumiewanie się nadając kluczem kod Morse' a.
-\item Transmisja RTTY - to dalekopis.
+\item Emisja CW - to po prostu telegrafia, czyli porozumiewanie się poprzez nadawanie kodu Morse' a. Polega na przerywaniu niemodulowanej fali nośnej czyli kluczowaniu.
+\item Emisja RTTY - to dalekopis.
 \item Dane - to jakakolwiek transmisja cyfrowa.
 \item Pakiety - transmisja PacketRadio.
 \item Głos - inaczej transmisja foniczna, wykorzystuje głos ludzki. Istnieją trzy jej główne typy - FM, AM i wstęgowa (SSB), która dzieli się na dolnowstęgową (LSB) i górnowstęgową (USB).
@@ -165,13 +166,13 @@ Punkt dziesiętny & Punkt dziesiętny & Point/Decimal (czyt. dejsimal) \\ \hline
 Łamanie znaku pozwala w prosty sposób przekazać już przy wywołaniu pewne informacje, które mogą być istotne dla pomyślnego przeprowadzenia łączności lub oceny jej atrakcyjności (np. czy łączność jest daleka, czy bliska). Poniżej przedstawiłem najczęściej używane sposoby łamania znaku:
 \begin{itemize}
 \item ZN4K/p - zwykle literowane ''przez Paweł'', ''przez portable'', po angielsku ''stroke portable'', oznacza że nadajemy ze stacji przenośnej, ręcznej, zwykle małej mocy (QRP).
-\item ZN4K/qrp - oznacza stację małej mocy.
 \item ZN4K/m - zwykle literowane ''przez mobil'', po angielsku ''stroke mobile'' - stacja poruszająca się, najczęściej samochodowa, ale może być też stosowane np. na jachcie żaglowym na wodach terytorialnych.
 \item ZN4K/mm - zwykle literowane po angielsku ''Mary Mary'' lub ''Mickey Mouse'' - oznacza stację nadającą ze statku znajdującego się na wodach międzynarodowych.
 \item ZN4K/am - nie spotkałem się ze specjalnym literowaniem - oznacza stację pracującą z powietrza.
 \item ZN4K/d - po angielsku ''stroke disaster'' - oznacza stację pracującą z miejsca katastrofy lub klęski żywiołowej.
 \item PX/ZN4K - jeżeli jesteśmy na terenie innego kraju i jest on w zrzeszeniu CEPT (w przypadku pozwoleń wydanych w krajach tego zrzeszenia, w tym w Polsce), to przez okres 3 miesięcy możemy korzystać ze swojego znaku łamiąc go na początku przez prefiks danego kraju np. OK/ZN4K jeżeli pracujemy z terenu Czech. To jedyne łamanie, które jest obowiązkowe.
 \item ZN4K/numer - używane, jeżeli stacja nie łamie się przez nic, a pracuje spoza swojej lokalizacji widniejącej na pozwoleniu radiowym, w szczególności z innego okręgu wywoławczego.
+\item QRP - nie jest to typowe łamanie znaku, ale w ten sposób przekazywana jest informacja, że stacja jest małej mocy. Przykłady: \textit{This is QRP station SO9PH} lub \textit{SO9PH QRP}.
 \end{itemize}
 Opisane powyżej łamania znaków można ze sobą łączyć, aby przekazać dodatkowe informacje. Oczywiście można się też łamać przez inne rzeczy zależnie od sytuacji, ale występują one rzadko. Poniżej przedstawiam mapę polskich okręgów wywoławczych jako załącznik do ostatniego przykładu.
 \begin{figure}[p]
@@ -267,4 +268,9 @@ SP9HACK & 59 & 59 & Paweł & Kraków & 25.01.2016 10:00 \\ \hline
 \end{center}
 \section{Chcesz wiedzieć więcej?}
 W tym dokumencie tylko liznąłem temat krótkofalarstwa, gromadząc mam nadzieję wszystkie informację potrzebne do prawidłowego przeprowadzenia pierwszych łączności. Jeżeli spodobał Ci się, drogi czytelniku, temat i chciałbyś dowiedzieć się więcej lub szukasz już materiałów na egzamin, serdecznie polecam \href{http://kurs.sp9kgp.org}{stronę kursu klubu Ryjek SP9KGP}. Polecam również Google i Wikipedię - zwłaszcza źródła angielskie. To właśnie z tych źródeł powstał niniejszy dokument, wspierany moim własnym doświadczeniem operatorskim. Amatorskie 73, dalekich łączności i owocnego korzystania z powyższych informacji życzy Phitherek\_ SO9PH. Do usłyszenia na pasmach!
+\section{Podziękowania}
+Chciałbym podziękować za wkład w ulepszenie tego dokumentu następującym osobom:
+\begin{itemize}
+\item Wojtkowi SQ9PBS za uwagi merytoryczne.
+\end{itemize}
 \end{document}

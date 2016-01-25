@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[polish]{babel}
 \usepackage{graphicx}
+\usepackage{hyperref}
 \renewcommand{\familydefault}{\rmdefault}
 \renewcommand*\rmdefault{ptm}
 \renewcommand*\sfdefault{phv}
@@ -163,12 +164,12 @@ Punkt dziesiętny & Punkt dziesiętny & Point/Decimal (czyt. dejsimal) \\ \hline
 \subsection{Łamanie}
 Łamanie znaku pozwala w prosty sposób przekazać już przy wywołaniu pewne informacje, które mogą być istotne dla pomyślnego przeprowadzenia łączności lub oceny jej atrakcyjności (np. czy łączność jest daleka, czy bliska). Poniżej przedstawiłem najczęściej używane sposoby łamania znaku:
 \begin{itemize}
-\item ZN4K/p - zwykle literowane "przez Paweł", "przez portable", po angielsku "stroke portable", oznacza że nadajemy ze stacji przenośnej, ręcznej, zwykle małej mocy (QRP).
+\item ZN4K/p - zwykle literowane ''przez Paweł'', ''przez portable'', po angielsku ''stroke portable'', oznacza że nadajemy ze stacji przenośnej, ręcznej, zwykle małej mocy (QRP).
 \item ZN4K/qrp - oznacza stację małej mocy.
-\item ZN4K/m - zwykle literowane "przez mobil", po angielsku "stroke mobile" - stacja poruszająca się, najczęściej samochodowa, ale może być też stosowane np. na jachcie żaglowym na wodach terytorialnych.
-\item ZN4K/mm - zwykle literowane po angielsku "Mary Mary" lub "Mickey Mouse" - oznacza stację nadającą ze statku znajdującego się na wodach międzynarodowych.
+\item ZN4K/m - zwykle literowane ''przez mobil'', po angielsku ''stroke mobile'' - stacja poruszająca się, najczęściej samochodowa, ale może być też stosowane np. na jachcie żaglowym na wodach terytorialnych.
+\item ZN4K/mm - zwykle literowane po angielsku ''Mary Mary'' lub ''Mickey Mouse'' - oznacza stację nadającą ze statku znajdującego się na wodach międzynarodowych.
 \item ZN4K/am - nie spotkałem się ze specjalnym literowaniem - oznacza stację pracującą z powietrza.
-\item ZN4K/d - po angielsku "stroke disaster" - oznacza stację pracującą z miejsca katastrofy lub klęski żywiołowej.
+\item ZN4K/d - po angielsku ''stroke disaster'' - oznacza stację pracującą z miejsca katastrofy lub klęski żywiołowej.
 \item PX/ZN4K - jeżeli jesteśmy na terenie innego kraju i jest on w zrzeszeniu CEPT (w przypadku pozwoleń wydanych w krajach tego zrzeszenia, w tym w Polsce), to przez okres 3 miesięcy możemy korzystać ze swojego znaku łamiąc go na początku przez prefiks danego kraju np. OK/ZN4K jeżeli pracujemy z terenu Czech. To jedyne łamanie, które jest obowiązkowe.
 \item ZN4K/numer - używane, jeżeli stacja nie łamie się przez nic, a pracuje spoza swojej lokalizacji widniejącej na pozwoleniu radiowym, w szczególności z innego okręgu wywoławczego.
 \end{itemize}
@@ -177,4 +178,93 @@ Opisane powyżej łamania znaków można ze sobą łączyć, aby przekazać doda
 \includegraphics{Polish_HAM_Radio_Regions}
 \caption{Polskie okręgi wywoławcze}
 \end{figure}
+\clearpage
+\section{Kod Q i slang radioamatorski}
+Kod Q i slang radioamatorski zostały stworzone głównie na potrzeby telegrafii, ale niektórych zwrotów używa się także w łączności głosowej. Służą skróceniu przekazywanej informacji. Najczęściej używane zwroty przedstawiłem w poniższej tabeli.
+\begin{center}
+\begin{tabular}{| c | c |}
+\hline
+\textbf{Zwrot} & \textbf{Znaczenie} \\ \hline
+QSY & Przejście na częstotliwość, zmiana częstotliwości \\ \hline
+QRM & Zakłócenia od innych stacji \\ \hline
+QRN & Zakłócenia atmosferyczne (zwłaszcza: burza) \\ \hline
+QRV & Gotowość do pracy, bycie czynnym w eterze \\ \hline
+QRT & Wyłączam radio, zaprzestaję pracy \\ \hline
+QTH & Lokalizacja, położenie geograficzne \\ \hline
+QRO & Duża moc, także: zwiększ moc, zwiększam moc \\ \hline
+QRP & Mała moc, także: zmniejsz moc, zmniejszam moc \\ \hline
+QSO & Łączność \\ \hline
+QSL & Potwierdzenie łączności, także karta potwierdzająca łączność \\ \hline
+QRZ & Kto mnie wołał? Używane także zamiast wywołania ogólnego. \\ \hline
+CQ & Wywołanie ogólne (może być bardziej szczegółowe np. CQ CONTEST) \\ \hline
+UNLIS & Nielicencjonowany nadawca \\ \hline
+YL & Panna, młoda pani \\ \hline
+XYL & Narzeczona, żona, dziewczyna \\ \hline
+DX & Daleka łączność \\ \hline
+UTC & Czas uniwersalny \\ \hline
+LOG & Dziennik pracy stacji \\ \hline
+DIRECT & Łączność bezpośrednia \\ \hline
+73! & Pozdrowienia amatorskie \\ \hline
+99! & Idź precz, przepadnij \\ \hline
+\end{tabular}
+\end{center}
+\section{Przebieg łączności}
+W tej sekcji podam podstawowe zasady prowadzenia łączności krótkofalarskiej i przedstawię jak wygląda przykładowa łączność.
+\subsection{Podstawowe elementy wymagane w łączności}
+W teorii wszystkie wiadomości nadawane w łączności powinny być adresowane do innej stacji, a w wiadomości powinien pojawić się znak zarówno odbiorcy, jak i własny. W praktyce to zależy od sytuacji, ale podawane w łączności znaków jest zawsze mile widziane. Znaki powinno się podawać obok siebie, zaczynając od znaku odbiorcy, a następnie podając własny znak. Aby ułatwić sprawę, warto między te znaki włożyć frazę ''tu'', ''tutaj'' czy ''tutaj stacja''. Przykład: \textit{SO9PH, tutaj SP9HACK}. Aby łączność była formalnie ważna, obie stacje muszą ze sobą wymienić raporty RST, imiona operatorów i lokalizacje (QTH). Znaki warto literować, zwłaszcza na początku łączności, kiedy obie strony muszą je poznać.
+\subsection{Wywołanie}
+Łączność krótkofalarska zazwyczaj zaczyna się od wywołania. Wywołanie może być ogólne lub bardziej szczegółowe - od programów dyplomowych typu SOTA, poprzez wołanie tylko łączności z dalekich krajów (tzw. DX-ów) czy zawody, po wołanie konkretnego znaku. W wywołaniu ogólnym powinno się też podawać pasmo, ale tylko jeżeli chodzi o wołanie na częstotliwościach bezpośrednich (tzw. DIRECT). Na tych częstotliwościach wywołanie powinno być też dłuższe, aby osoba po drugiej stronie zrozumiała nas przez ewentualne zakłócenia. Przykładowe wywołania:
+\begin{itemize}
+\item Wywołanie ogólne na częstotliwości bezpośredniej: \textit{Wywołanie ogólne, wywołanie ogólne w paśmie dwóch metrów, tutaj stacja SO9PH, zapraszam do łączności.}
+\item Wywołanie ogólne na przemienniku\footnote{Przemiennik to automatyczna stacja, która przekazuje sygnał odbierany na częstotliwości wejściowej na częstotliwość wyjściową. Często znajduje się na wzniesieniu, gdyż jego celem jest zwiększenie zasięgu łączności dla stacji, które do niego docierają i go słyszą. Łączność przez przemiennik nazywa się też dupleksem, w odróżnieniu od simpleksu.}: \textit{Wywołanie ogólne, wywołanie ogólne, tutaj stacja SO9PH, zapraszam do łączności.}
+\item Wywołanie w programie górskim SOTA: \textit{Wywołanie, wywołanie w programie SOTA, wywołanie w programie SOTA, tutaj stacja SO9PH, zapraszam do łączności}
+\item Wywołanie szczegółowego znaku: \textit{SP9HACK, SO9PH prosi.}
+\item Wywołanie po angielsku w paśmie 20 m: \textit{CQ, CQ twenty, CQ twenty, this is SO9PH, calling CQ, standing by for call.}
+\end{itemize}
+\subsection{Zanim zaczniesz wołać}
+Przed rozpoczęciem wołania na częstotliwości bezpośredniej, warto spytać parę razy: \textit{Czy częstotliwość jest wolna? Czy częstotliwość jest wolna? Is the frequency in use?} Po każdym takim zawołaniu zostawić chwilkę przerwy - jeżeli częstotliwość nie jest wolna, powinien zgłosić się operator innej stacji i powiedzieć, że prowadzi łączność. Wtedy należy zaczekać. Jeżeli nie ma odpowiedzi, to można spokojnie zacząć wywołanie. Dlaczego to jest potrzebne? Ponieważ nie zawsze słyszymy obie stacje prowadzące ze sobą łączność.
+\subsection{Raport RST}
+Raport RST (ang. Readability, Signal, Tone) to trzycyfrowy raport, który daje drugiej stacji ważne informacje o sygnale i łączności z jego strony. Trzeba pamiętać, że jak nadajemy to siebie nie słyszymy, a taki raport może nam pomóc zdiagnozować usterkę w instalacji. Tak samo działa to po drugiej stronie. Raport składa się z trzech części:
+\begin{itemize}
+\item Czytelność (ang. Readability) - oceniana na ucho w skali od 1 do 5 (1 - zupełnie nieczytelny, 5 - doskonale czytelny)
+\item Sygnał (ang. Signal) - czytany z S-metru w radiu w skali od 1 do 9
+\item Ton (ang. Tone) - oceniany na ucho w skali od 1 do 9
+\end{itemize}
+W łączności głosowej używa się tylko dwóch pierwszych kryteriów (RS), ponadto na przemiennikach używa się tylko czytelności (można dodatkowo podać raport RS dla samego przemiennika, głównie jeżeli nie słyszymy go na 59). Cyfry raportu podaje się bezpośrednio po sobie, w kolejności Czytelność, Sygnał Ton, na przykład: \textit{Raport dla Ciebie to 59 (pięć dziewięć)./Słyszę Cię na 59.}
+\subsection{Przemienniki i prośba o raport}
+Przed rozpoczęciem łączności przez przemiennik często warto zapytać o raport: \textit{Poproszę o raport na przemienniku, tutaj SO9PH.} lub \textit{Czy jestem odbierany na przemienniku? Tutaj SO9PH.} Odpowiedź na taką prośbę brzmi na przykład: \textit{Piątka kolego, tu SP9HACK.} Po odpowiedzi warto podziękować i przekazać krótkie pozdrowienia 73.
+\subsection{Praca w grupie}
+Jeżeli chcemy się włączyć do prowadzonej rozmowy, to najpierw cierpliwie czekamy, aż stacja skończy nadawać i będzie chwilowa przerwa. W tej przerwie nadajemy raz lub parę razy słowo BREK. Dlatego też zawsze warto zostawiać podczas łączności trochę dłuższą przerwę przed rozpoczęciem nadawania, aby zostawić miejsce dla ewentualnych innych osób. Jeżeli od osoby, do której był aktualnie przekazywany mikrofon, usłyszymy \textit{Proszę bardzo BREK} to możemy się przywitać, podać swój znak i przekazać mikrofon dalej. Przekazywanie mikrofonu odbywa się poprzez nadanie np. \textit{Mikrofon do SP9HACK.} albo po prostu \textit{SP9HACK SO9PH}. Będąc w grupie odzywamy się dopiero wtedy, kiedy zostanie do nas przekazany mikrofon. Przy wymianie znaków wymieniamy tylko znak stacji, która nam przekazała i dodajemy: \textit{i grupa} lub \textit{i ewentualna grupa} jeżeli nie wiemy, czy ktoś jeszcze prowadzi wraz z nami rozmowę.
+\subsection{Kończenie transmisji}
+Aby miło skończyć transmisję, należy podziękować za łączność i przekazać pozdrowienia dla naszego rozmówcy. Nie należy zupełnie kończyć łączności dopóki druga strona nie odpowie nam tym samym. Jeżeli jesteśmy ostatnią stacją w łączności, warto wymienić znaki i ewentualnie imiona i lokalizacje stacji, które uczestniczyły włączności, wyrażnie zaznaczyć koniec łączności i że częstotliwość lub przemiennik są już wolne.
+\subsection{Przykładowe łączności}
+Chciałbym podsumować powyższe informacje poprzez podanie pełnych przykładowych łączności po polsku i po angielsku. Poniżej przedstawiam przykładową łączność w języku polskim pomiędzy stacjami SO9PH i SP9HACK przez przemiennik:
+\begin{itemize}
+\item \textit{Wywołanie ogólne, wywołanie ogólne, tutaj stacja Stefan Olga Dziewięć Paweł Halina, zapraszam do łączności.}
+\item \textit{Stefan Paweł Dziewięć Halina Adam Cezary Karol}
+\item \textit{Stefan Paweł Dziewięć Halina Adam Cezary Karol, tutaj Stefan Olga Dziewięć Paweł Halina. Witam kolegę serdecznie, z tej strony operator Piotr, moje QTH to Kraków, odbieram cię na piątkę, bardzo ładnie. Mikrofon do Ciebie.}
+\item \textit{Stefan Olga Dziewięć Paweł Halina, tutaj Stefan Paweł Dziewięć Halina Adam Cezary Karol. Również serdecznie wita, z tej strony operator Paweł, moje QTH to też Kraków. Raport dla Ciebie to także bardzo ładna piątka. Mikrofon do Ciebie.}
+\item \textit{SP9HACK tu SO9PH, fajnie było Cię spotkać. Dziękuję Ci za łączność, 73 i do następnych. Mikrofon na finał do Ciebie.}
+\item \textit{SO9PH tu SP9HACK, również fajnie Cię słyszeć, dziękuję za miłe krótkie QSO, 73 i do następnych spotkań. Rozmawiały stacje Stefan Olga Dziewięć Paweł Halina (Piotr, Kraków) i Stefan Paweł Dziewięć Halina Adam Cezary Karol (Paweł, Kraków). Po łączności, przemiennik wolny.}
+\end{itemize}
+A poniżej łączność między tymi samymi stacjami po angielsku na częstotliwości bezpośredniej:
+\begin{itemize}
+\item \textit{CQ, CQ two meter, CQ two meter this is Sierra Oscar Nine Papa Hotel, calling CQ, standing by for call.}
+\item \textit{Sierra Papa Nine Hotel Alpha Charlie Kilo}
+\item \textit{Sierra Papa Nine Hotel Alpha Charlie Kilo, this is Sierra Oscar Nine Papa Hotel. Hello, this is operator Piotr, this is Papa India Oscar Tango Romeo, my current QTH is Cracow, this is Charlie Romeo Alpha Charlie Oscar Whiskey. The report for you is five nine. Go ahead.}
+\item \textit{Sierra Oscar Nine Papa Hotel, this is Sierra Papa Nine Hotel Alpha Charlie Kilo. Hello Piotr, nice to meet you, this is operator Paweł, this is Papa Alpha Whiskey Echo Lima, my current QTH is also Cracow. The report for you is also five nine. Go ahead.}
+\item \textit{Sierra Papa Nine Hotel Alpha Charlie Kilo, this is Sierra Oscar Nine Papa Hotel. Thank you very much for QSO, 73 to you and all the best. Go ahead.}
+\item \textit{Sierra Oscar Nine Papa Hotel, this is Sierra Papa Nine Hotel Alpha Charlie Kilo. Also thank you for QSO, 73 and all the best. Sierra Oscar Nine Papa Hotel and Sierra Papa Nine Hotel Alpha Charlie Kilo were talking, QSO over, frequency free.}
+\end{itemize}
+\section{Log stacji i logowanie łączności}
+Łączności warto zapisywać w logu. Log stacji to papierowy lub elektroniczny zapis łączności. Zawiera zwykle znak korespondenta, raporty do i od drugiej strony, imię i QTH rozmówcy oraz datę i godzinę UTC łączności. Można także zapisywać częstotliwość i modulację. Prowadzenie logu jest wskazane, ale nie jest wymagane. Przykładowy wpis do logu:
+\begin{center}
+\begin{tabular}{| c | c | c | c | c | c |}
+\hline
+\textbf{Znak} & \textbf{Raport do} & \textbf{Raport od} & \textbf{Imię} & \textbf{QTH} & \textbf{UTC} \\ \hline
+SP9HACK & 59 & 59 & Paweł & Kraków & 25.01.2016 10:00 \\ \hline
+\end{tabular}
+\end{center}
+\section{Chcesz wiedzieć więcej?}
+W tym dokumencie tylko liznąłem temat krótkofalarstwa, gromadząc mam nadzieję wszystkie informację potrzebne do prawidłowego przeprowadzenia pierwszych łączności. Jeżeli spodobał Ci się, drogi czytelniku, temat i chciałbyś dowiedzieć się więcej lub szukasz już materiałów na egzamin, serdecznie polecam \href{http://kurs.sp9kgp.org}{stronę kursu klubu Ryjek SP9KGP}. Polecam również Google i Wikipedię - zwłaszcza źródła angielskie. To właśnie z tych źródeł powstał niniejszy dokument, wspierany moim własnym doświadczeniem operatorskim. Amatorskie 73, dalekich łączności i owocnego korzystania z powyższych informacji życzy Phitherek\_ SO9PH. Do usłyszenia na pasmach!
 \end{document}
